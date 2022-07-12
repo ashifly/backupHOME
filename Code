@@ -1,0 +1,4 @@
+#!/bin/bash
+tar -zcvf /tmp/backup.tgz /home/victim
+openssl enc -aes256 -k BACKUPfile -in /tmp/backup.tgz  -out /tmp/backup.tgz.enc
+rm /tmp/backup.tgz
